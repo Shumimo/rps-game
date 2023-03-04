@@ -91,8 +91,8 @@ const game =  () => {
                 return;
             } else {
                 winner.textContent = 'Challenger wins!';
-                //cScore++;
-                //updateScore();
+                cScore++;
+                updateScore();
                 return;
              };
         };
