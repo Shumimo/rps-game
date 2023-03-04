@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+    /* overflow: hidden; */
+}
+
+body {
+    background: #0757ec;
+}
+.score h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.score p {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.intro h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 7rem;
+}
+
+.intro {
+    transition: opacity 0.5s ease;
+}
+
+.intro button, .match button {
+    margin-top: 5rem;
+    width: 230px;
+    height: 80px;
+    background: #3807a8;
+    border: none;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ec6e07;
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
+.match {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.5s;
+}
+
+.match img {
+    width: 600px;
+    height: 500px;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.challenger-hand {
+    transform: rotateY(180deg);
+}
+
+.winner {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}
